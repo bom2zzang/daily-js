@@ -33,3 +33,35 @@ function solution(clothes) {
 
     return answer;
 }
+
+
+
+
+/**
+    
+    기능개발
+
+*/
+function solution(progresses, speeds) {
+    //var answer = [];
+    
+    const answer = progresses.map((item,idx)=>{
+        let cnt = 0;
+        while(item<100){
+            
+            item = item + speeds[idx];
+            cnt = cnt + 1;
+        }
+        
+        return cnt;     
+        
+    },[]).reduce((a,b,c,d)=>{        
+        
+
+        
+    },[]);
+    
+    
+    
+    return answer;
+}
